@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Jogo</title>
+</head>
+
+<body class="bg-game">
+  <div class="container box">
+    <h1 class="title-game">Jogo da Velha</h1>
+    <table class="game">
+      <tr>
+        <td class="squad" id="1"></td>
+        <td class="squad" id="2"></td>
+        <td class="squad" id="3"></td>
+      </tr>
+      <tr>
+        <td class="squad" id="4"></td>
+        <td class="squad" id="5"></td>
+        <td class="squad" id="6"></td>
+      </tr>
+      <tr>
+        <td class="squad" id="7"></td>
+        <td class="squad" id="8"></td>
+        <td class="squad" id="9"></td>
+      </tr>
+    </table>
+    <div class="nameplayer">
+      <label>Jogador:</label>
+      <label class="player"></label>
+    </div>
+    <div>
+      <!--<button type="button" class="btn-reboot">Reiniciar</button>-->
+      <a href="" class="btn-reboot">Reiniciar</a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="winnerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="winnerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-winner">
+        <div class="btn-modal">
+          <div class="btn-closemodal" data-bs-dismiss="modal" aria-label="Close">
+            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="25" height="25">
+              <path class="st0" d="M0 0h80v80H0z" />
+              <path class="svg-white"
+                d="M54.1 40L40 54.1l11.4 11.4c3.3 3.3 8.8 3.3 12.2 0l1.9-1.9c3.3-3.3 3.3-8.8 0-12.2L54.1 40z" />
+              <path class="svg-white"
+                d="M28.6 14.5c-3.3-3.3-8.8-3.3-12.2 0l-1.9 1.9c-3.3 3.3-3.3 8.8 0 12.2L40 54.1 54.1 40 28.6 14.5z" />
+              <path class="svg-white"
+                d="M14.5 51.4c-3.3 3.3-3.3 8.8 0 12.2l1.9 1.9c3.3 3.3 8.8 3.3 12.2 0L40 54.1 25.9 40 14.5 51.4z" />
+              <path class="svg-white"
+                d="M65.5 28.6c3.3-3.3 3.3-8.8 0-12.2l-1.9-1.9c-3.3-3.3-8.8-3.3-12.2 0L40 25.9 54.1 40l11.4-11.4z" />
+              <path class="svg-white" d="M40 32.1c-7 0-14.1 7.9-14.1 7.9L40 54.1 54.1 40S47 32.1 40 32.1z" />
+              <path transform="rotate(-45.098 48.776 48.842)" class="svg-white" d="M38.8 46.4h19.9v4.9H38.8z" />
+            </svg>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="winner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
